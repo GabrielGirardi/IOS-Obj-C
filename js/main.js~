@@ -4,6 +4,10 @@ window.onload = function() {
 
 
     menuBtn.addEventListener("click", function() {
-        menuOptions.classList.toggle("active");
+        if (menuOptions.hasClass = "active") {
+            menuOptions.classList.remove("active");
+        } else {
+            menuOptions.classList.add("active");
+        }
     });
 };

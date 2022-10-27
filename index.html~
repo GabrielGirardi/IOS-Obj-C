@@ -30,34 +30,7 @@
                     width="32"
                     height="32"
                 />
-                <div class="menu-list">
-                    <ul class="menu-options">
-                        <li class="title-menu-list">
-                            <h3>
-                                Menu
-                            </h3>
-                            <img
-                                class="logo-apple-menu"
-                                src="./assets/logo/apple-icon.svg"
-                                alt="logo apple"
-                                width="16"
-                                height="16"
-                            />
-                        </li> 
-                        <li class="options">
-                            Option 1
-                        </li> 
-                        <li class="options">
-                            Option 2
-                        </li>
-                        <li class="options">
-                            Option 3
-                        </li>
-                        <li class="options">
-                            Option 4
-                        </li>
-                    </ul>
-                </div>
+                <div class="menu-list"></div>
             </div>
         </div>
     </header>

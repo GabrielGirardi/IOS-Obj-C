@@ -12,11 +12,19 @@ a {
     text-decoration: none;
 }
 
+.logo-apple {
+    filter: invert(1);
+}
+
+.logo-apple-menu {
+    filter: greyscale(1);
+}
+
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #d9d9d9;
+    background: #000;
     width: 100%;
     height: 40px;
     padding: 0 10px;
@@ -34,15 +42,44 @@ a {
 
 .menu-list {
     display: flex;
+    justify-content: center;
+    text-align: center;
     position: absolute;
-    transition: all 1s;
     top: 40px;
     left: 0;
-    width: -205px;
-    height: 400px;
-    background: #d9d9d9;
+    width: 0px;
+    height: 380px;
+    background: linear-gradient(to top, grey, darkgrey, black);
+    border-radius: 0 0 4px 0;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    transition: all .3s;
+    padding-bottom: 5px;
+    overflow: hidden;
+    opacity: 0;
 }
 
 .menu-list.active {
+    opacity: 1;
     width: 200px;
+}
+
+.menu-list ul {
+    background: #f9f9f9;
+    width: 94%;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.title-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    gap: 3px;
+    border-bottom: 1px solid #000;
+}
+
+.options {
+    margin-top: 5px;
 }
