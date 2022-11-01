@@ -10,7 +10,6 @@ li {
 
 a {
     text-decoration: none;
-    color: #fff;
 }
 
 .logo-apple {
@@ -86,65 +85,9 @@ a {
 .options {
     margin-top: 5px;
     color: #fff;
+
 }
 
 .options a {
     color: #fff;
-}
-
-section {
-    margin: 620px;
-}
-
-.main-footer {
-    background: #000;
-    width: 100%;
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-top: 1px solid #808080;
-    border-bottom: 1px solid #808080;
-}
-
-.main-footer .container {
-    width: 90%;
-    background: #000;
-    color: #fff;
-    height: 45%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    border-bottom: 1px solid #808080;
-
-}
-
-.lgpd-content .lgpd {
-    color: #808080;
-    
-}
-
-.content-1 a {
-    transition: all .2s;
-}
-
-.content-1 a:hover {
-    color: #808080;
-    text-decoration: underline;
-}
-
-.divisor {
-    height: 3px;
-    width: 2px;
-    color: #808080;
-    margin: 0 6px;
-}
-
-.slogan-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
