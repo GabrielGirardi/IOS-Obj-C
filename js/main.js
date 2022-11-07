@@ -12,7 +12,7 @@ window.onload = function() {
         if(menuOptions.classList.contains("active")) {
             menuBtn.firstElementChild.setAttribute('src', './assets/close-hambur.png')
         } else {
-               menuBtn.firstElementChild.setAttribute('src', './assets/menu-hambur.png')
-        };
+            menuBtn.firstElementChild.setAttribute('src', './assets/menu-hambur.png')
+        }
     });
 };
