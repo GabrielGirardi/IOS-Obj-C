@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;0,800;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 li {
@@ -13,41 +16,60 @@ a {
     color: #fff;
 }
 
-/* End of imports and styles config */
+/* End of imports | generic styles config */
+
+.logo-desktop {
+    display: flex;
+    align-items: center;
+}
 
 .logo-apple {
-    filter: invert(1);
     transition: all .3s;
+    width: 16px;
+    height: 16px;
+}
+
+.logo-apple:hover {
+    filter: invert(0.60);
 }
 
 .logo-apple.hide {
     opacity: 0;
 }
 
+div.mobile {
+    display: none;
+}
+
 .header-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
     background: var(--cor-base);
     width: 100%;
     height: 42px;
-    padding: 0 10px;
+    padding: 0 20px;
+    gap: 20px;
 }
 
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     transition: all .3s;
+    z-index: 1000;
+}
+
+.menu.opened {
+    background: var(--cor-base);
 }
 
 .menu.opened img {
     border-radius: 50%;
-    filter: invert(1);
 }
 .menu-list {
     display: flex;
@@ -57,7 +79,7 @@ a {
     top: 40px;
     left: 0;
     width: 0;
-    height: 500px;
+    height: 890px;
     background: var(--cor-base);
     border-radius: 0 0 4px 0;
     border-bottom: 1px solid var(--cor-base);
@@ -71,7 +93,25 @@ a {
 .menu-list.active {
     opacity: 1;
     width: 100%;
-    height: 100%;
+    height: 890px;
+    z-index: 999;
+}
+
+.menu-options-desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.options-desktop a {
+    color: var(--cor-texto-light);
+    font-size: 12px;
+    transition: color .3s;
+}
+
+.options-desktop a:hover {
+    color: #fff;
 }
 
 .title-menu-list {
@@ -82,15 +122,35 @@ a {
     gap: 3px;
     border-bottom: 1px solid #fff;
     color: #fff;
+    font-size: 16px;
 }
 
 .options {
     margin-top: 5px;
     color: #fff;
+    font-size: 14px;
 }
 
 .options a {
     color: #fff;
+}
+
+.welcome {
+    display: flex;
+    gap: 4px;
+    margin-left: 30px;
+    margin-top: 4px;
+    color: var(--cor-texto-light);
+    font-size: 12px;
+}
+
+.welcome img {
+    filter: invert(1);
+}
+
+.welcome .name:hover {
+    color: #fff;
+    cursor: pointer;
 }
 
 /* End of Header Styles */
@@ -123,6 +183,7 @@ section {
     width: 90%;
     height: 45%;
     color: #fff;
+    font-size: 14px;
 }
 
 .lgpd-content .lgpd {
@@ -163,7 +224,32 @@ section {
 
 /* Mobile Configs for mobile and tablet*/
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+
+    div.mobile {
+        display: flex;
+    }
+
+    div.desktop {
+        display: none;
+    }
+
+    ul.menu-options-desktop {
+        display: none;
+    }
+
+
+    img.logo-apple {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-top {
+        height: 90px;
+        justify-content: space-between;
+        gap: 0;
+    }
+
     .main-footer {
         height: 180px;
     }
@@ -206,4 +292,9 @@ section {
     .main-footer .container .lgpd-content {
         display: none;
     }
+
+   .menu-opened {
+       width: 32px;
+       height: 32px;
+   }
 }
