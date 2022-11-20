@@ -16,6 +16,10 @@ a {
     color: #fff;
 }
 
+section {
+    margin: 100px 0;
+}
+
 /* End of imports | generic styles config */
 
 .logo-desktop {
@@ -76,10 +80,10 @@ div.mobile {
     justify-content: center;
     text-align: center;
     position: absolute;
-    top: 40px;
+    top: 12px;
     left: 0;
     width: 0;
-    height: 890px;
+    height: 940px;
     background: var(--cor-base);
     border-radius: 0 0 4px 0;
     border-bottom: 1px solid var(--cor-base);
@@ -90,11 +94,47 @@ div.mobile {
     opacity: 0;
 }
 
+.menu-options {
+    width: 96%;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid var(--cor-bordas);
+}
+
 .menu-list.active {
     opacity: 1;
     width: 100%;
     height: 890px;
     z-index: 999;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: thin solid var(--cor-bordas);
+    height: 30px;
+}
+
+.options a {
+    color: #fff;
+}
+
+.title-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0 20px;
+    gap: 3px;
+    color: #fff;
+    font-size: 16px;
 }
 
 .menu-options-desktop{
@@ -114,26 +154,6 @@ div.mobile {
     color: #fff;
 }
 
-.title-menu-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    gap: 3px;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-    font-size: 16px;
-}
-
-.options {
-    margin-top: 5px;
-    color: #fff;
-    font-size: 14px;
-}
-
-.options a {
-    color: #fff;
-}
 
 .welcome {
     display: flex;
@@ -155,9 +175,6 @@ div.mobile {
 
 /* End of Header Styles */
 
-section {
-    margin: 620px auto;
-}
 
 /* End End of Section Styles */
 
@@ -245,7 +262,7 @@ section {
     }
 
     .header-top {
-        height: 90px;
+        height: 70px;
         justify-content: space-between;
         gap: 0;
     }

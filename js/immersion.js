@@ -1,18 +1,17 @@
-window.onload = function() {
-    let menuBtn = document.querySelector('.menu');
-    let menuOptions = document.querySelector('.menu-list');
-    let logo = document.querySelector('.logo-apple');
+$(document).ready(function() {
+    setTimeout(function () {
+        let dialog = $('.welcome-text');
 
+        dialog.addClass('show');
+    }, 400);
 
-    menuBtn.addEventListener("click", function() {
-        menuOptions.classList.toggle("active");
-        logo.classList.toggle("hide");
-        menuBtn.classList.toggle("opened");
-        
-        if(menuOptions.classList.contains("active")) {
-            menuBtn.firstElementChild.setAttribute('src', './assets/close-hambur.png')
-        } else {
-               menuBtn.firstElementChild.setAttribute('src', './assets/menu-hambur.png')
-        };
+    let buttonNext = $('.button-next');
+
+    buttonNext.on('click', function () {
+        let dialog = $('.dialog-2');
+
+        dialog.addClass('show');
+        buttonNext.toggle();
     });
-};
+});
+
