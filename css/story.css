@@ -1,0 +1,63 @@
+@import url(https://fonts.bunny.net/css?family=amita:700);
+body {
+    background: url(https://res.cloudinary.com/ritalbradley/image/upload/v1657644013/pexels-elijah-o_donnell-3473569_o7ohfd.jpg) center center/cover no-repeat;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fefae0;
+    font-family: Amita;
+    margin: 20px auto;
+    width: 450px;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 10px double #bc6c25;
+}
+
+h2 {
+    color: #fefae0;
+    font-family: Amita;
+    margin: 20px auto;
+    text-align: center;
+    border-bottom: 10px double #fbff00;
+}
+
+.image-story {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border: 10px solid #fefae0;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.image-story:hover {
+    border: 5px solid #fff;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: none;
+    filter: none;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
