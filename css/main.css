@@ -16,6 +16,13 @@ a {
     color: #fff;
 }
 
+@media (min-width: 768px) {
+    section {
+        max-width: 1240px;
+        margin: 60px auto;
+    }
+}
+
 /* End of imports | generic styles config */
 
 .logo-desktop {
