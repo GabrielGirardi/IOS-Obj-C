@@ -18,7 +18,7 @@ h1 {
     width: 450px;
     font-size: 3rem;
     text-align: center;
-    border-bottom: 10px double #bc6c25;
+    border-bottom: 10px double var(--cor-base-college);
 }
 
 h2 {
@@ -26,22 +26,39 @@ h2 {
     font-family: Amita;
     margin: 20px auto;
     text-align: center;
-    border-bottom: 10px double #fbff00;
+    border-bottom: 10px double var(--cor-base-college);
 }
 
 .image-story {
     width: 300px;
     height: 400px;
     margin: 20px;
-    border: 10px solid #fefae0;
+    border: 10px solid var(--cor-base-gold);
+    object-fit: contain;
     -webkit-filter: sepia(100%);
     filter: sepia(100%);
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
 }
 
+#object-logo {
+    background-color: var(--cor-base-white);
+}
+
+#college {
+    background-color: var(--cor-base-college);
+}
+
+#brad-cox {
+    background-color: var(--cor-base-brad-cox);
+}
+
+#code-object {
+    background-color: var(--cor-base-white);
+}
+
 .image-story:hover {
-    border: 5px solid #fff;
+    border: 5px solid var(--cor-base-gold);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-filter: none;
