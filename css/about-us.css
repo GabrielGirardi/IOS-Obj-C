@@ -1,0 +1,35 @@
+#container {
+    background-color: var(--cor-bordas);
+    margin: 80px 10%;
+    padding: 30px 60px;
+    border-radius: 20px;
+    box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+}
+
+
+section {
+    padding: 20px;
+    border-radius: 10px;
+    color: #6b6b6b;
+    background-color: var(--cor-base-light);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 1.15rem;
+    line-height: 1.4em;
+}
+
+section h1, h2, h3 {
+    margin: 20px 0;
+}
+
+#about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--cor-base);
+    border-radius: 13px;
+    background-color: var(--cor-base);
+    color: var(--cor-base-white);
+    width: 200px;
+    height: 50px;
+}
