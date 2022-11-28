@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/global-colors.css">
+    <link rel="stylesheet" href="./css/global-contents.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <title>Página Principal</title>
@@ -83,21 +85,64 @@
         </div>
     </header>
     <section>
-        <div class="introduction">
-            <div class="wrapper">
-                <div class="typing-demo">
-                    Bem vindo visitante!
+        <ul id="cards">
+            <li class="card" id="card-1">
+                <div class="card-content">
+                    <div>
+                        <h2>INTRODUÇÃO</h2>
+                        <p>
+                            A linguagem Objective-C foi criada por Brad Cox e sua empresa, a StepStone Corporation, no início da década de 80.</p>
+                        </p>
+                    </div>
+                    <figure>
+                        <img src="./assets/logo/objective-c-square.png" alt="Logo Objective-C">
+                    </figure>
                 </div>
-            </div>
-            <div class="next-content">
-                <img src="./assets/arrow-back.svg" alt="Próximo conteúdo" width="32" height="32"/>
-            </div>
-        </div>
-        <div class="content-2">
-            <span>
-                lorem impsun dolor
-            </span>
-        </div>
+            </li>
+            <li class="card" id="card-2">
+                <div class="card-content">
+                    <div>
+                        <h2>Reconhecimento</h2>
+                        <p>
+                            Em 88 ela foi licenciada pela NeXT, tornando-se a linguagem de desenvolvimento do NeXTstep. O suporte do GNU/gcc foi acrescentado em 1992.
+                        </p>
+                    </div>
+                    <figure>
+                        <img src="./assets/logo/objective-c-square.png" alt="Logo Objective-C">
+                    </figure>
+                </div>
+            </li>
+            <li class="card" id="card-3">
+                <div class="card-content">
+                    <div>
+                        <h2>Implementação</h2>
+                        <p>
+                            A implementação da Free Software Foundation da especificação OpenStep é denominada GNUStep.
+                        </p>
+                    </div>
+                    <figure>
+                        <img src="./assets/logo/objective-c-square.png" alt="Logo Objective-C">
+                    </figure>
+                </div>
+            </li>
+            <li class="card" id="card-4">
+                <div class="card-content">
+                    <div>
+                        <h2>Utilização</h2>
+                        <p>
+                            Atualmente Objective-C é utilizada como uma linguagem de programação do MacOS X, que é baseado no NeXTstep. A versão da Apple do ambiente NeXTStep/GNUStep com adições é denominada Cocoa.
+                        </p>
+                    </div>
+                    <figure>
+                        <img src="./assets/logo/objective-c-square.png" alt="Logo Objective-C">
+                    </figure>
+                </div>
+            </li>
+        </ul>
+        <aside>
+            <p>A Apple anunciou sua nova linguagem de programação, Swift. Ela foi desenvolvida com o intuito de modernizar, facilitar e melhorar a usabilidade para profissionais de desenvolvimento iOS. </p>
+            <p>Por mais que pareça que o Objective-C já está se aposentando, em alguns casos ele ainda se faz necessário. Principalmente se tratando de acesso e controle de recursos de baixo nível e é exatamente por isso que Swift e Objective-C ainda devem coexistir por bastante tempo.</p>
+        </aside>
     </section>
     <footer>
         <div class="main-footer">
