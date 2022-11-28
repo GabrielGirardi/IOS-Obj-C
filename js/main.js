@@ -33,15 +33,4 @@ window.onload = function() {
         localStorage.setItem('nome', JSON.stringify(nomeRegistered));
         nomeBtn.textContent = (nomeObj.nome);
     });
-
-    setInterval(function () {
-        let nomeString = localStorage.getItem('nome');
-        let nomeObj = JSON.parse(nomeString);
-
-        nomeBtn.textContent = (nomeObj.nome);
-
-        if(nomeBtn = nomeObj) {
-            textWelcome.textContent = ('Olá! ');
-        }
-    }, 300);
 };

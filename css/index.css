@@ -12,6 +12,7 @@
 
 section {
     padding: 0 12px;
+    font-size: calc(1em + 0.5vw);
 }
 
 div.show {
@@ -22,7 +23,6 @@ body {
     background: var(--cor-base-light);
     color: #fff;
     text-align: center;
-    font-size: calc(1em + 0.5vw);
 }
 
 #cards {
