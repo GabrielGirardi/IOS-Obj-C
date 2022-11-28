@@ -17,20 +17,4 @@ window.onload = function() {
             menuBtn.firstElementChild.setAttribute('src', './assets/menu-hambur.svg')
         }
     });
-
-    let nomeBtn = document.querySelector('.name')
-    let textWelcome = document.querySelector('.welcome-text');
-
-
-    nomeBtn.addEventListener("click", function() {
-        let nome = prompt('Qual o seu nome?');
-
-        let nomeRegistered = {nome}
-        let nomeString = localStorage.getItem('nome');
-        let nomeObj = JSON.parse(nomeString);
-
-
-        localStorage.setItem('nome', JSON.stringify(nomeRegistered));
-        nomeBtn.textContent = (nomeObj.nome);
-    });
 };
