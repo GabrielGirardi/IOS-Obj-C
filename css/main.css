@@ -36,10 +36,6 @@ a {
     height: 16px;
 }
 
-.logo-apple:hover {
-    filter: invert(0.60);
-}
-
 .logo-apple.hide {
     opacity: 0;
 }
@@ -164,18 +160,12 @@ div.mobile {
     margin-left: 30px;
     margin-top: 4px;
     color: var(--cor-texto-light);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .welcome img {
     filter: invert(1);
 }
-
-.welcome .name:hover {
-    color: #fff;
-    cursor: pointer;
-}
-
 /* End of Header Styles */
 
 
@@ -212,10 +202,11 @@ div.mobile {
 
 .content-1 a {
     transition: all .2s;
+    color: var(--cor-texto-light);
 }
 
 .content-1 a:hover {
-    color: var(--cor-secundaria);
+    color: var(--cor-base-white);
     text-decoration: underline;
 }
 
