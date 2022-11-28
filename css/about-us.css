@@ -1,3 +1,7 @@
+abbr {
+    text-decoration: none;
+}
+
 #container {
     background-color: var(--cor-bordas);
     margin: 80px 10%;
